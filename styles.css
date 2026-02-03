@@ -549,6 +549,10 @@ body {
     .section-header h2 {
         font-size: 2rem;
     }
+
+    .tailscale-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {

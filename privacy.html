@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy — PolyHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">POLYHUB</a></div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#tailscale">Tailscale</a>
+                <a href="index.html#download" class="btn-primary">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="privacy-page">
+        <div class="privacy-content">
+            <h1>PRIVACY POLICY</h1>
+            <div class="section-line"></div>
+
+            <section class="privacy-section">
+                <h2>NO DATA COLLECTION</h2>
+                <p>PolyHub does not collect, store, or transmit any of your personal information or file data to our
+                    servers. We don't have servers. We don't track you. We don't sell your data.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>HOW IT WORKS</h2>
+                <p>PolyHub is a peer-to-peer file sharing application that operates entirely over Tailscale's encrypted
+                    VPN network. Here's what that means:</p>
+                <ul>
+                    <li><strong>Direct Transfers:</strong> Files transfer directly from your computer to your peer's
+                        computer. No cloud storage, no intermediary servers.</li>
+                    <li><strong>VPN-Based:</strong> All connections happen through Tailscale's private mesh network
+                        (100.x.x.x IP range). Only devices on your Tailscale network can connect.</li>
+                    <li><strong>End-to-End Encryption:</strong> Tailscale provides WireGuard-based encryption for all
+                        traffic. Your files are encrypted in transit.</li>
+                    <li><strong>Local Processing:</strong> All file operations, pairing, and gallery management happen
+                        locally on your device.</li>
+                </ul>
+            </section>
+
+            <section class="privacy-section">
+                <h2>WHAT WE DON'T KNOW</h2>
+                <p>Because PolyHub operates peer-to-peer over Tailscale, we have zero visibility into:</p>
+                <ul>
+                    <li>What files you share</li>
+                    <li>Who you share files with</li>
+                    <li>When you use the application</li>
+                    <li>Your IP address or location</li>
+                    <li>Your Tailscale network configuration</li>
+                </ul>
+            </section>
+
+            <section class="privacy-section">
+                <h2>TAILSCALE'S ROLE</h2>
+                <p>PolyHub requires Tailscale to function. Tailscale is a third-party VPN service that handles network
+                    connectivity. Please review <a href="https://tailscale.com/privacy-policy" target="_blank"
+                        rel="noopener noreferrer">Tailscale's Privacy Policy</a> to understand how they handle your
+                    network data.</p>
+                <p>Key points about Tailscale:</p>
+                <ul>
+                    <li>Tailscale coordinates connections but doesn't see your file data</li>
+                    <li>All traffic is end-to-end encrypted using WireGuard</li>
+                    <li>Tailscale may collect metadata about network connections for service operation</li>
+                </ul>
+            </section>
+
+            <section class="privacy-section">
+                <h2>LOCAL DATA STORAGE</h2>
+                <p>PolyHub stores the following data locally on your device:</p>
+                <ul>
+                    <li><strong>Profile Information:</strong> Your display name and Tailscale IP address</li>
+                    <li><strong>Peer List:</strong> Names and IPs of users you've paired with</li>
+                    <li><strong>Public Keys:</strong> Cryptographic keys used for secure pairing</li>
+                </ul>
+                <p>This data never leaves your device except when shared directly with peers you explicitly connect to.
+                </p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>OPEN SOURCE</h2>
+                <p>PolyHub is open source. You can review the entire codebase on <a
+                        href="https://github.com/Starbug10/Poly-Hub" target="_blank"
+                        rel="noopener noreferrer">GitHub</a> to verify our privacy claims. No hidden telemetry, no
+                    analytics, no tracking.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>UPDATES TO THIS POLICY</h2>
+                <p>If we ever change how PolyHub handles data, we'll update this policy and the version on GitHub. The
+                    current version is always available at this URL.</p>
+                <p class="privacy-date">Last updated: February 3, 2026</p>
+            </section>
+
+            <div class="privacy-cta">
+                <a href="index.html" class="btn-secondary">Back to Home</a>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer"
+                    class="btn-primary">View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">POLYHUB</div>
+                <p>P2P file sharing for trusted users</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#tailscale">Tailscale</a>
+                <a href="index.html#download">Download</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Starbug10/Poly-Hub/issues" target="_blank" rel="noopener noreferrer">Report
+                    Issue</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PolyHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
