@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyHub</title>
+    <title>PolyHub — P2P File Sharing</title>
+    <link rel="icon" type="image/png" href="assets/PH4Logo2.png">
+    <link rel="apple-touch-icon" href="assets/PH4Logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,52 +16,68 @@
 <body>
     <nav class="nav">
         <div class="nav-content">
-            <div class="logo">POLYHUB</div>
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">POLYHUB</a>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#tailscale">Tailscale</a>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="privacy.html">Privacy</a>
                 <a href="#download" class="btn-primary">Download</a>
             </div>
         </div>
     </nav>
 
-    <div class="hero-wrapper">
-        <header class="hero">
-            <div class="grain-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">P2P FILE SHARING</span>
-                    <span class="title-line">FOR TRUSTED</span>
-                    <span class="title-line accent">USERS</span>
-                </h1>
-                <p class="hero-subtitle">Share massive files (5GB+) instantly between 2-3 users over Tailscale's
-                    encrypted mesh network. No cloud storage, no upload limits.</p>
-                <div class="hero-cta">
-                    <a href="#download" class="btn-primary">Get Started</a>
-                    <a href="#how-it-works" class="btn-secondary">Learn More</a>
-                </div>
+    <header class="hero">
+        <div class="grain-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">P2P FILE SHARING</span>
+                <span class="title-line">FOR TRUSTED</span>
+                <span class="title-line accent">USERS</span>
+            </h1>
+            <p class="hero-subtitle">Share massive files (5GB+) instantly between 2-3 users over Tailscale's
+                encrypted mesh network. No cloud storage, no upload limits.</p>
+            <div class="hero-cta">
+                <a href="https://github.com/Starbug10/Poly-Hub/releases" target="_blank" rel="noopener noreferrer"
+                    class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    Download
+                </a>
+                <a href="https://github.com/Starbug10/Poly-Hub/issues" target="_blank" rel="noopener noreferrer"
+                    class="btn-icon btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M4.47.22A.75.75 0 015 0h6a.75.75 0 01.53.22l4.25 4.25c.141.14.22.331.22.53v6a.75.75 0 01-.22.53l-4.25 4.25A.75.75 0 0111 16H5a.75.75 0 01-.53-.22L.22 11.53A.75.75 0 010 11V5a.75.75 0 01.22-.53L4.47.22zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5H5.31zM8 4a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 100-2 1 1 0 000 2z" />
+                    </svg>
+                    Report Issue
+                </a>
             </div>
-            <div class="hero-visual">
-                <svg viewBox="0 0 400 400" class="hero-svg">
-                    <polygon points="200,50 350,150 300,300 100,300 50,150" stroke="var(--color-accent)"
-                        stroke-width="2" fill="none" />
-                    <polygon points="200,100 300,170 270,270 130,270 100,170" stroke="var(--color-text)"
-                        stroke-width="1" fill="none" opacity="0.5" />
-                    <circle cx="200" cy="50" r="4" fill="var(--color-accent)" />
-                    <circle cx="350" cy="150" r="4" fill="var(--color-accent)" />
-                    <circle cx="300" cy="300" r="4" fill="var(--color-accent)" />
-                    <circle cx="100" cy="300" r="4" fill="var(--color-accent)" />
-                    <circle cx="50" cy="150" r="4" fill="var(--color-accent)" />
-                    <line x1="200" y1="50" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                        stroke-dasharray="4" />
-                    <line x1="350" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                        stroke-dasharray="4" />
-                    <line x1="50" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                        stroke-dasharray="4" />
-                </svg>
-            </div>
-        </header>
+            <p class="hero-note">Personal project — bugs expected. Help improve it on GitHub!</p>
+        </div>
+        <div class="hero-visual">
+            <svg viewBox="0 0 400 400" class="hero-svg">
+                <polygon points="200,50 350,150 300,300 100,300 50,150" stroke="var(--color-accent)" stroke-width="2"
+                    fill="none" />
+                <polygon points="200,100 300,170 270,270 130,270 100,170" stroke="var(--color-text)" stroke-width="1"
+                    fill="none" opacity="0.5" />
+                <circle cx="200" cy="50" r="4" fill="var(--color-accent)" />
+                <circle cx="350" cy="150" r="4" fill="var(--color-accent)" />
+                <circle cx="300" cy="300" r="4" fill="var(--color-accent)" />
+                <circle cx="100" cy="300" r="4" fill="var(--color-accent)" />
+                <circle cx="50" cy="150" r="4" fill="var(--color-accent)" />
+                <line x1="200" y1="50" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                    stroke-dasharray="4" />
+                <line x1="350" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                    stroke-dasharray="4" />
+                <line x1="50" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                    stroke-dasharray="4" />
+            </svg>
+        </div>
+    </header>
     </div>
 
     <section id="features" class="features">
@@ -70,15 +88,15 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-number">01</div>
-                <h3>Direct P2P Transfer</h3>
-                <p>Files transfer directly between peers over Tailscale's encrypted mesh network. No intermediary
-                    servers, no upload limits.</p>
+                <h3>Lightning Fast Transfers</h3>
+                <p>Optimized for speed. Files transfer directly between peers with no intermediary servers slowing you
+                    down. Send 5GB+ files in minutes, not hours.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-number">02</div>
-                <h3>Massive File Support</h3>
-                <p>Built for files 5GB and larger. Share entire project folders, video files, or datasets without
-                    compression.</p>
+                <h3>Drag & Drop Anywhere</h3>
+                <p>System-wide shortcuts let you drag files from anywhere on your PC directly onto PolyHub. No need to
+                    open folders or navigate menus.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-number">03</div>
@@ -204,11 +222,25 @@
             <p>Download the latest release from GitHub. Windows first, macOS/Linux support coming soon.</p>
             <div class="download-buttons">
                 <a href="https://github.com/Starbug10/Poly-Hub/releases" target="_blank" rel="noopener noreferrer"
-                    class="btn-primary">Download from GitHub</a>
-                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer"
-                    class="btn-secondary">View Source Code</a>
+                    class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    Download from GitHub
+                </a>
+                <a href="https://github.com/Starbug10/Poly-Hub/issues" target="_blank" rel="noopener noreferrer"
+                    class="btn-icon btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        <path d="M8 0a8 8 0 110 16A8 8 0 018 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z" />
+                    </svg>
+                    Report Issue
+                </a>
             </div>
             <p class="download-note">Version 1.0.0 • Electron + React • Requires Tailscale</p>
+            <p class="download-disclaimer">This is a personal project. Bugs and issues are expected. Please report them
+                on GitHub to help improve PolyHub!</p>
         </div>
     </section>
 
