@@ -34,6 +34,23 @@
     </nav>
 
     <header class="hero">
+        <svg viewBox="0 0 400 400" class="hero-bg-svg">
+            <polygon points="200,30 380,120 320,320 80,300 30,140" stroke="var(--color-accent)" stroke-width="2"
+                fill="none" />
+            <polygon points="200,90 310,160 280,280 120,270 90,160" stroke="var(--color-text)" stroke-width="1"
+                fill="none" opacity="0.5" />
+            <circle cx="200" cy="30" r="4" fill="var(--color-accent)" />
+            <circle cx="380" cy="120" r="4" fill="var(--color-accent)" />
+            <circle cx="320" cy="320" r="4" fill="var(--color-accent)" />
+            <circle cx="80" cy="300" r="4" fill="var(--color-accent)" />
+            <circle cx="30" cy="140" r="4" fill="var(--color-accent)" />
+            <line x1="200" y1="30" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                stroke-dasharray="4" />
+            <line x1="380" y1="120" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                stroke-dasharray="4" />
+            <line x1="30" y1="140" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
+                stroke-dasharray="4" />
+        </svg>
         <div class="hero-content">
             <h1 class="hero-title">
                 <span class="title-line">P2P FILE SHARING</span>
@@ -62,24 +79,21 @@
             </div>
             <p class="hero-note">Personal project — bugs expected. Help improve it on GitHub!</p>
         </div>
-        <div class="hero-visual">
-            <svg viewBox="0 0 400 400" class="hero-svg">
-                <polygon points="200,50 350,150 300,300 100,300 50,150" stroke="var(--color-accent)" stroke-width="2"
-                    fill="none" />
-                <polygon points="200,100 300,170 270,270 130,270 100,170" stroke="var(--color-text)" stroke-width="1"
-                    fill="none" opacity="0.5" />
-                <circle cx="200" cy="50" r="4" fill="var(--color-accent)" />
-                <circle cx="350" cy="150" r="4" fill="var(--color-accent)" />
-                <circle cx="300" cy="300" r="4" fill="var(--color-accent)" />
-                <circle cx="100" cy="300" r="4" fill="var(--color-accent)" />
-                <circle cx="50" cy="150" r="4" fill="var(--color-accent)" />
-                <line x1="200" y1="50" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                    stroke-dasharray="4" />
-                <line x1="350" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                    stroke-dasharray="4" />
-                <line x1="50" y1="150" x2="200" y2="200" stroke="var(--color-text)" stroke-width="1" opacity="0.3"
-                    stroke-dasharray="4" />
-            </svg>
+        <div class="hero-screenshots">
+            <div class="screenshot-carousel">
+                <div class="screenshot-container">
+                    <img src="app/gallery.png" alt="PolyHub Gallery View" class="screenshot active">
+                    <img src="app/lighttheme.png" alt="PolyHub Light Theme" class="screenshot">
+                    <img src="app/settings-storage.png" alt="PolyHub Settings Storage" class="screenshot">
+                    <img src="app/Sidebar-settings.png" alt="PolyHub Sidebar Settings" class="screenshot">
+                </div>
+                <div class="screenshot-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+            </div>
         </div>
     </header>
     </div>

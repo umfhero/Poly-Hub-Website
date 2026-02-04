@@ -22,6 +22,37 @@ if (document.getElementById('version-number')) {
     fetchLatestVersion();
 }
 
+// Screenshot carousel functionality
+let currentSlide = 0;
+const screenshots = document.querySelectorAll('.screenshot');
+const dots = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+    screenshots.forEach((screenshot, i) => {
+        screenshot.classList.remove('active');
+        dots[i].classList.remove('active');
+    });
+
+    screenshots[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+}
+
+// Auto-advance slides
+if (screenshots.length > 0) {
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % screenshots.length;
+        showSlide(currentSlide);
+    }, 4000);
+
+    // Dot click handlers
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+}
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
