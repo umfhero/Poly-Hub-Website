@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog - PolyHub</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo"
+                style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                POLYHUB
+                <img src="assets/icon.png" alt="PolyHub V4" style="height: 28px; width: 28px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#tailscale">Tailscale</a>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="devlog.html">Devlog</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="privacy-page">
+        <div class="privacy-content">
+            <h1>DEVELOPMENT LOG</h1>
+            <div class="section-line"></div>
+
+            <section class="privacy-section">
+                <h2>THE EVOLUTION OF POLYHUB</h2>
+                <p>PolyHub is the fourth iteration of a P2P file sharing concept that has evolved significantly over
+                    time. The "4" in the logo represents this journey through multiple versions, each teaching valuable
+                    lessons about what works and what doesn't in peer-to-peer applications.</p>
+            </section>
+
+            <section class="privacy-section">
+                <div class="version-header">
+                    <h2>VERSION 4: POLYHUB (CURRENT)</h2>
+                    <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary" style="font-size: 0.9rem; padding: 0.4rem 0.8rem;">View on GitHub</a>
+                </div>
+                <p class="version-subtitle">The Focused Solution</p>
+
+                <h3>What It Has</h3>
+                <ul>
+                    <li><strong>Electron + React:</strong> Modern web technologies for native-feeling desktop app</li>
+                    <li><strong>Tailscale Integration:</strong> Leverages existing VPN for secure networking</li>
+                    <li><strong>File-Only Focus:</strong> Removed drawing and chat to focus on core use case</li>
+                    <li><strong>Shared Gallery:</strong> Refined file gallery from V2</li>
+                    <li><strong>Drag & Drop:</strong> System-wide file sharing shortcuts</li>
+                    <li><strong>Pairing Links:</strong> Simple connection mechanism</li>
+                </ul>
+
+                <h3>What Works</h3>
+                <ul>
+                    <li><strong>Technology Stack:</strong> Electron provides native performance and easy distribution
+                    </li>
+                    <li><strong>Tailscale Foundation:</strong> Offloads networking complexity to proven solution</li>
+                    <li><strong>Focused Scope:</strong> Does one thing (file sharing) really well</li>
+                    <li><strong>User Experience:</strong> Combines V3's design polish with V2's reliability</li>
+                    <li><strong>Large File Support:</strong> Handles 5GB+ files without cloud storage</li>
+                </ul>
+
+                <h3>Current Limitations</h3>
+                <ul>
+                    <li><strong>Windows Only:</strong> macOS and Linux support planned but not yet implemented</li>
+                    <li><strong>Tailscale Dependency:</strong> Requires users to install and configure Tailscale</li>
+                    <li><strong>Small Group Size:</strong> Optimized for 2-3 users, not larger groups</li>
+                    <li><strong>Personal Project:</strong> Limited testing, bugs expected</li>
+                </ul>
+
+                <h3>Design Philosophy</h3>
+                <p>PolyHub represents a "less is more" approach. By removing features that weren't essential (drawing,
+                    chat) and focusing exclusively on fast, secure file sharing, the app became more reliable and easier
+                    to maintain. The Tailscale integration was a game-changer, eliminating the need to build custom
+                    networking code.</p>
+
+                <p>The "4" in the logo is a reminder of the journey: three previous versions that each contributed
+                    valuable lessons, leading to a fourth version that finally gets it right.</p>
+            </section>
+
+            <section class="privacy-section">
+                <div class="version-header">
+                    <h2>VERSION 3: VORTEX TUNNEL V3</h2>
+                    <a href="https://github.com/umfhero/Vortext-Tunnel-V3" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary" style="font-size: 0.9rem; padding: 0.4rem 0.8rem;">View on GitHub</a>
+                </div>
+                <p class="version-subtitle">The Visual Upgrade</p>
+
+                <h3>What It Had</h3>
+                <ul>
+                    <li><strong>Modern UI:</strong> Significantly improved visual design</li>
+                    <li><strong>Better UX:</strong> More intuitive interface and interactions</li>
+                    <li><strong>Python-Based:</strong> Rebuilt using Python for rapid development</li>
+                </ul>
+
+                <h3>What Worked</h3>
+                <ul>
+                    <li><strong>Visual Design:</strong> Best-looking version yet with clean, modern aesthetics</li>
+                    <li><strong>User Experience:</strong> Easier to understand and navigate</li>
+                    <li><strong>Development Speed:</strong> Python allowed faster iteration</li>
+                </ul>
+
+                <h3>What Didn't Work</h3>
+                <ul>
+                    <li><strong>Python Limitations:</strong> Performance issues and distribution challenges</li>
+                    <li><strong>Platform Constraints:</strong> Looked and felt like a Python app, not native</li>
+                    <li><strong>Functionality Gaps:</strong> Core features didn't work as reliably as V2</li>
+                    <li><strong>Distribution Problems:</strong> Hard to package and distribute to users</li>
+                </ul>
+
+                <h3>Key Lessons</h3>
+                <p>Great design isn't enough if the underlying technology limits functionality. Python was the wrong
+                    choice for a desktop app that needs to feel native and perform well. The visual direction was right,
+                    but the technical foundation needed to change.</p>
+            </section>
+
+            <section class="privacy-section">
+                <div class="version-header">
+                    <h2>VERSION 2: VORTEX TUNNEL V2</h2>
+                    <a href="https://github.com/Starbug10/Vortex-Tunnel-V2" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary" style="font-size: 0.9rem; padding: 0.4rem 0.8rem;">View on GitHub</a>
+                </div>
+                <p class="version-subtitle">The Functional Version</p>
+
+                <h3>What It Had</h3>
+                <ul>
+                    <li><strong>Stable Connections:</strong> Reliable P2P networking that actually worked</li>
+                    <li><strong>Online Status Checks:</strong> Could see which users were connected and active</li>
+                    <li><strong>File Gallery:</strong> Shared view of all files available in the session</li>
+                    <li><strong>Live Drawing:</strong> Improved collaborative drawing canvas</li>
+                    <li><strong>Messaging System:</strong> More reliable chat functionality</li>
+                </ul>
+
+                <h3>What Worked</h3>
+                <ul>
+                    <li><strong>Connection Reliability:</strong> Consistent peer-to-peer connections</li>
+                    <li><strong>User Presence:</strong> Online/offline status detection worked well</li>
+                    <li><strong>File Management:</strong> Gallery view made file sharing more intuitive</li>
+                    <li><strong>Feature Integration:</strong> Drawing, chat, and files worked together smoothly</li>
+                </ul>
+
+                <h3>What Didn't Work</h3>
+                <ul>
+                    <li><strong>Feature Bloat:</strong> Too many features made the app complex</li>
+                    <li><strong>Performance Issues:</strong> Drawing and chat added overhead</li>
+                    <li><strong>Maintenance Burden:</strong> Multiple features meant more bugs to fix</li>
+                </ul>
+
+                <h3>Key Lessons</h3>
+                <p>V2 proved the technical foundation was solid, but the scope was too broad. Users primarily wanted
+                    file sharing, not drawing or chat. The gallery concept was the standout feature worth keeping.</p>
+            </section>
+
+            <section class="privacy-section">
+                <div class="version-header">
+                    <h2>VERSION 1: VORTEX TUNNEL</h2>
+                    <a href="https://github.com/umfhero/Vortext-Tunnel" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary" style="font-size: 0.9rem; padding: 0.4rem 0.8rem;">View on GitHub</a>
+                </div>
+                <p class="version-subtitle">The Prototype</p>
+
+                <h3>What It Had</h3>
+                <ul>
+                    <li><strong>Real-time Drawing:</strong> Shared canvas for collaborative drawing</li>
+                    <li><strong>Live Chat:</strong> Text messaging between connected users</li>
+                    <li><strong>File Sharing:</strong> Basic P2P file transfer capabilities</li>
+                    <li><strong>Always-on-Top Window:</strong> UI stayed visible above other windows</li>
+                </ul>
+
+                <h3>What Didn't Work</h3>
+                <ul>
+                    <li><strong>Unreliable Connections:</strong> Would randomly fail to connect or disconnect</li>
+                    <li><strong>No Online Status:</strong> Couldn't tell if other users were actually connected</li>
+                    <li><strong>Inconsistent Performance:</strong> Sometimes worked perfectly, sometimes not at all</li>
+                    <li><strong>Limited Error Handling:</strong> Crashes and failures with no clear feedback</li>
+                </ul>
+
+                <h3>Key Lessons</h3>
+                <p>The prototype proved the concept was viable but highlighted the need for reliable connection
+                    management and better user feedback. The always-on-top feature was interesting but not essential.
+                </p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>WHAT'S NEXT</h2>
+                <ul>
+                    <li><strong>Cross-Platform Support:</strong> macOS and Linux builds</li>
+                    <li><strong>Performance Optimization:</strong> Faster transfers for massive files</li>
+                    <li><strong>Better Error Handling:</strong> More helpful feedback when things go wrong</li>
+                    <li><strong>Community Feedback:</strong> Improvements based on real-world usage</li>
+                </ul>
+                <p>PolyHub is open source and actively developed. If you find bugs or have feature requests, please
+                    report them on GitHub!</p>
+            </section>
+
+            <div class="privacy-cta">
+                <a href="index.html" class="btn-secondary">Back to Home</a>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer"
+                    class="btn-primary">View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">POLYHUB</div>
+                <p>P2P file sharing for trusted users</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#tailscale">Tailscale</a>
+                <a href="index.html#download">Download</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="https://github.com/Starbug10/Poly-Hub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Starbug10/Poly-Hub/issues" target="_blank" rel="noopener noreferrer">Report
+                    Issue</a>
+                <a href="devlog.html">Devlog</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PolyHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

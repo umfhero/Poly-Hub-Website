@@ -1,3 +1,27 @@
+// Fetch latest version from GitHub
+async function fetchLatestVersion() {
+    try {
+        const response = await fetch('https://api.github.com/repos/Starbug10/Poly-Hub/releases/latest');
+        const data = await response.json();
+        const version = data.tag_name || data.name || '1.0.0';
+        const versionElement = document.getElementById('version-number');
+        if (versionElement) {
+            versionElement.textContent = version;
+        }
+    } catch (error) {
+        console.error('Failed to fetch version:', error);
+        const versionElement = document.getElementById('version-number');
+        if (versionElement) {
+            versionElement.textContent = '1.0.0';
+        }
+    }
+}
+
+// Call on page load
+if (document.getElementById('version-number')) {
+    fetchLatestVersion();
+}
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
